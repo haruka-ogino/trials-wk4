@@ -3,7 +3,7 @@ import { Character, NewCharacter } from '../models/chars'
 
 export async function getChars() {
   try {
-    const res = await request.get('https://ghibli-api.devacademy.nz/ghibli')
+    const res = await request.get('/api/v1/ghibli')
     return res.body as Character[]
   } catch (error) {
     console.error(error)
