@@ -1,6 +1,5 @@
 import express from 'express'
-import { Character } from '../../client/models/chars'
-import { getCharacterById, getGhibliCharacters } from '../functions'
+import { addNewChar, getCharacterById, getGhibliCharacters } from '../functions'
 
 const router = express.Router()
 
@@ -20,6 +19,17 @@ router.get('/:id', async (req, res) => {
   if (char) {
     res.json(char)
   } else {
+    res.sendStatus(500)
+  }
+})
+
+router.post('/add-char', async (req, res) => {
+  try {
+    const newChar = req.body
+    await addNewChar(newChar)
+    res.send('New Character Added')
+  } catch (error) {
+    console.error(error)
     res.sendStatus(500)
   }
 })

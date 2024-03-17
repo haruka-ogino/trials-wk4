@@ -21,9 +21,7 @@ export async function getCharById(id: string) {
 
 export async function addChar(newChar: NewCharacter) {
   try {
-    const res = await request
-      .post(`https://ghibli-api.devacademy.nz/ghibli`)
-      .send(newChar)
+    const res = await request.post(`/api/v1/ghibli//add-char`).send(newChar)
     return res.body as NewCharacter
   } catch (error) {
     console.error(error)

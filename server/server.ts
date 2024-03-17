@@ -1,6 +1,4 @@
-import * as Path from 'node:path'
 import express from 'express'
-import cors, { CorsOptions } from 'cors'
 import ghibli from './routes/ghibli'
 
 const server = express()
