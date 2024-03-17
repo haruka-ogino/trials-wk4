@@ -12,9 +12,7 @@ export async function getChars() {
 
 export async function getCharById(id: string) {
   try {
-    const res = await request.get(
-      `https://ghibli-api.devacademy.nz/ghibli/${id}`
-    )
+    const res = await request.get(`/api/v1/ghibli/${id}`)
     return res.body as Character
   } catch (error) {
     console.error(error)
