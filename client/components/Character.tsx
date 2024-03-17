@@ -25,6 +25,13 @@ export default function Character() {
   return (
     <>
       <h1>{char.name}</h1>
+      <img src={char.imgUrl} alt={char.name} />
+      <h2>As seen on:</h2>
+      <ul>
+        {char.movie.map((film, index) => (
+          <li key={index}>{film}</li>
+        ))}
+      </ul>
     </>
   )
 }
