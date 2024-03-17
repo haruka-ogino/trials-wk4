@@ -5,6 +5,7 @@ function Nav() {
     <div className="container">
       <p>Navigation</p>
       <Link to="/characters">Characters</Link>
+      <Link to="/add-new-character">Add A New Character</Link>
     </div>
   )
 }
