@@ -15,8 +15,8 @@ function Chars() {
   if (isLoading) return <p>Loading...</p>
 
   if (isError) return <p>Error</p>
-
-  if (chars)
+  console.log(chars)
+  if (chars) {
     return (
       <>
         <h1>This is the Char page</h1>
@@ -29,6 +29,7 @@ function Chars() {
         </ul>
       </>
     )
+  }
 }
 
 export default Chars

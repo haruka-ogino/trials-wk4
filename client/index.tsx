@@ -13,6 +13,6 @@ const root = createRoot(document.getElementById('app') as HTMLElement)
 root.render(
   <QueryClientProvider client={queryClient}>
     <RouterProvider router={router} />
-    {/* <ReactQueryDevtools /> */}
+    <ReactQueryDevtools />
   </QueryClientProvider>
 )
