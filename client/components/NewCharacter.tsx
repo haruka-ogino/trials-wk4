@@ -31,7 +31,7 @@ export default function NewCharacter() {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form className="form" onSubmit={handleSubmit}>
         <label htmlFor="name">Character Name:</label>
         <input
           onChange={(e) => setName(e.target.value)}

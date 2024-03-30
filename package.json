@@ -30,10 +30,14 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.2",
+    "express-jwt": "^7.7.5",
+    "express-jwt-authz": "^2.4.1",
+    "jwks-rsa": "^2.1.5",
     "react-router-dom": "^6.22.3",
     "superagent": "^8.1.2"
   },
   "devDependencies": {
+    "@auth0/auth0-react": "^2.2.4",
     "@devacademy/eslint-config": "^1.9.1",
     "@tanstack/eslint-plugin-query": "^5.12.2",
     "@tanstack/react-query": "^5.12.2",
